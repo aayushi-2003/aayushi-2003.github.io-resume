@@ -1,0 +1,517 @@
+body{
+    margin:0px;
+}
+
+
+#body-header{
+    height: 65vh;
+    background-image: url(img.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.92;
+    background-attachment: fixed;
+    
+}
+
+.h-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0;
+    padding-top: 15px;   
+    z-index: 1;
+}
+
+.h-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+}
+
+.h-list li a{
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-style: bold;
+font-size: 1.2rem;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+transition: color 0.5s, border-bottom 4s;
+margin: 1.5rem;
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+.h-list li a:hover{
+    color:rgb(233, 78, 117);
+    border-bottom: 1px solid white;
+}
+
+.my_name{
+    color:white;
+    font-size: 1.9rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 1rem;
+}
+
+.social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.3rem;
+}
+
+.icons{
+    list-style: none;
+}
+.icons li {
+    display: inline-block;
+    margin: 0px 15px 15px 0px;
+}
+
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+    color: white;
+    background-image: linear-gradient(to top , rgb(29, 10, 71),rgba(0, 0, 0, 0.916) 30rem);
+}
+
+#my_img{
+height: 15rem;
+width: 15rem;
+margin: auto;
+margin-top: -17vh;
+
+}
+
+#my_img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid rgb(21, 3, 56);
+    box-shadow: 0px 3px 5px rgb(61, 61, 98);
+    
+}
+
+.intro{
+    font-size: 1.7rem;
+    padding: 20px 200px 20px 250px;
+    line-height: 5rem;
+    
+}
+#my_intro{
+width:80%;
+margin: 50px;
+}
+
+section{
+    width:100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+section:nth-child(2n){
+  
+    background-image: linear-gradient(to bottom, rgb(29, 10, 71),  rgb(22, 21, 24));
+}
+section:nth-child(2n+1){
+    background-image: linear-gradient(to top, rgb(29, 10, 71),rgb(22, 21, 24));
+}
+
+#skills_icon{
+    height: 3.5rem;
+    width: 3.5rem;
+    
+    }
+
+.section_heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-weight: 400;
+
+}
+.section_heading span{
+    font-size: 40px;
+    color: #6ba0f5;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/* About Section media Queries */
+@media screen and (max-width: 1300px){
+    .intro{
+        font-size: 1.7rem;
+        padding: 20px 40px 20px 40px;
+        line-height: 5rem;
+        transition: 0.5s ease-in;
+        
+    }
+    
+}
+@media screen and (max-width:920px){
+    .my_name{
+        font-size: 1.4rem;
+        transition: 1s ease;
+    }    
+    .some>img{
+        height: 2.5rem;
+        transform: translateY(30px);
+        transition: 1s ease-in-out;
+    }
+}
+
+
+/* Skills Section */
+.skills_display
+{
+    margin-top: 30px;
+    width: 70%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+.skill_progress{
+    width: 9rem;
+    height: 3rem;
+    background-color: lightgrey;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: -0.1px -0.1px 3px rgb(132, 129, 129) inset;
+    margin-right: 5rem;
+    margin-left: 5rem;
+
+}
+.skill_name{
+    padding: 15px;
+}
+.skill_name span{
+color: white;
+font-size: 1rem;
+
+}
+
+.skill_progress>div{
+    border-radius: 20px 0px 0px 20px;
+    
+}
+
+/* Skill progress classes */
+.eighty{
+    width: 80%;
+    height: inherit;
+}
+.seventy{
+    width: 70%;
+    height: inherit;
+}
+
+.fifty{
+    width: 50%;
+    height: inherit;  
+}
+
+.mb-blue{
+    background-color: rgb(89, 89, 234);
+    box-shadow: 1px 0px 10px rgb(51, 47, 47);
+}
+.mb-red{
+    background-color: rgb(248, 3, 77);
+    box-shadow: 1px 0px 10px rgb(51, 47, 47);
+}
+.mb-yellow{
+    background-color: rgb(248, 183, 3);
+    box-shadow: 1px 0px 10px rgb(51, 47, 47);
+}
+/* Experience Section */
+#experience{
+    height: auto;
+}
+
+.timeline{
+    position: relative;
+    width: 75%;
+}
+
+.timeline_box{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 100px ;
+    margin: 5px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.timeline_box:nth-child(2n){
+    left: 53%;
+    padding-left: 10px;
+}
+.timeline_box:nth-child(2n+1){
+    text-align: right;
+    padding-right: 10px;
+}
+.timeline_box>h1{
+    color: rgb(255, 0, 102);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.timeline_box>h4{
+    color: rgb(255, 204, 0);
+}
+.timeline_box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top: 27%;
+    right: -11%;
+    border-radius: 50%;
+    width: 0.8rem;
+    height: 0.85rem;
+    background-color: rgb(32, 107, 220);
+    z-index: 1;
+
+}
+.timeline_box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -9.2%;
+    border-radius: 50%;
+    width: 0.8rem;
+    height: 0.85rem;
+    background-color: rgb(32, 107, 220);
+    z-index: 1;
+
+}
+.time_divider{
+    position: absolute;
+    height: 75%;
+    width: 0; 
+    border: 2.5px dashed rgb(162, 194, 241);
+    top: 10%;
+    left: 50%;
+
+}
+.time_traveller{
+top: 30%;
+position: sticky;
+transform: rotate(135deg);
+z-index: 1;
+}
+.plane{
+    width: 35px;
+    transform: translate(-15px);
+  
+}
+/* Work Experience Media Queries */
+@media screen and (max-width: 600px){
+    .time_divider{
+        left:5%;
+        transition: 1s ease-in-out;
+    }
+    .timeline_box{
+        left: 12% !important;
+        width: 80%;  
+        text-align: right;
+        transition: 1s ease-in-out;
+
+    }
+    .timeline_box::after{
+       left: -12% !important;
+       transition: 1s ease-in-out;
+
+
+    }
+   
+
+
+}
+
+/* Education Section */
+#education{
+    height: auto;
+}
+#school{
+    transform: rotate(360deg);
+}
+.school_icon{
+    width:40px;
+    transform: translate(-20px);
+
+}
+
+/* Contact */
+
+#contact{
+    background-image: linear-gradient(to bottom, rgb(29, 10, 71),rgb(80, 9, 93));
+
+}
+
+
+
+.contact_box{
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.contact_form{
+    height: 75%;
+    width: 30rem;
+    margin: 30px;
+}
+.contact_details{
+    height: 75%;
+    width: 30rem;
+    margin: 30px;
+    color: white;
+}
+
+.contact_me{
+    margin: 40px 0px 0px 50px;
+}
+form{
+    margin: 50px;
+}
+.your_name{
+    width: 100%;
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 15px;
+    color: white;
+}
+
+input[type=submit]{
+    background-color: inherit;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 5px;
+    transform: translate(8rem);
+    cursor: pointer;
+}
+
+.social_media_ic
+{height: 20px;
+    width: 50%;
+    margin-bottom: 20px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.3rem;
+}
+
+.icons_bottom{
+    list-style: none;
+}
+.icons_bottom li {
+    display: inline-block;
+    margin: 10px;
+  
+}
+.icons_bottom>li>a>img{
+    height: 2.3rem;
+}
+
+/* Portfolio */
+#portfolio{
+    height: auto;
+}
+.portfolio_box{
+    
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio_icons{
+    height: 15rem;
+    width: 15em;
+    margin: 50px;
+}
+.portfolio_icons>img{
+    height: 12rem;
+    transition: all 0.5s ease-in-out;
+}
+.portfolio_icons>img:hover{
+    height: 15rem;
+    transform: translate(-20px, -20px);
+    cursor:pointer;
+
+}
+
+/* Contact & Portfolio Section Media Queries */
+@media screen and (max-width: 1000px){
+    .contact_box{
+        height: 100%;
+        width: 100%;
+    }    
+    .contact_form{
+        height: 80%;
+        margin: 5px;
+    }
+    .contact_details{
+        height: 100%;
+        margin: 5px;
+        color: white;
+    }
+    input[type=submit]{
+        transform: translate(2.4rem);
+    }
+   
+    .something>img{
+        height: 2px;    
+    }
+    
+    .icons_bottom li {
+        display: block;      
+    }
+    .portfolio_icons>img{
+        height: 10rem;
+    }
+    .portfolio_icons{
+        height: 10rem;
+        width: 10em;
+        margin: 20px;
+    }
+    .social_media_ic{
+        transform: translate(-20px, -200px);
+
+    }
+    .portfolio_icons>img:hover{
+        height: 12rem;
+        transform: translate(-20px, -20px);
+    
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
